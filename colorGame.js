@@ -1,5 +1,5 @@
 var colors =[];
-var numSquares=6;
+var numSquares = 6;
 var pickedColor;
 var squares = document.getElementsByClassName("square");
 var colorDisplay = document.getElementById("colorDisplay");
@@ -11,12 +11,13 @@ var modeButtons = document.querySelectorAll(".mode");
 init();
 
 function init(){
+  //reset
+  reset();
 // add button event listener
   setupModeButtons();
 // add square event listener
   setupSquares();
-  //reset
-  reset();
+
 }
 
 function setupModeButtons(){
